@@ -1,0 +1,15 @@
+{
+  "name": "dan-review-api",
+  "version": "1.0.0",
+  "description": "monday review with dan",
+  "main": "danAPIReview.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.13.0"
+  }
+}

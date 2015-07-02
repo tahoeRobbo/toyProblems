@@ -33,16 +33,7 @@ function truthyObjLoop(user) {
 
 
 
-function VowelCount(str) { 
-	var splitStr = str.toLowerCase().split('');
-  	var count = 0;
-  	for(var i = 0; i < splitStr.length; i++) {
-      if(splitStr[i] === 'a' || splitStr[i] === 'e' || splitStr[i] === 'i' || splitStr[i] === 'o' || splitStr[i] === 'u') {
-         count +=1;
-         }
-         }
-         return count;
-};
+
 //NOT FINISHED
 var splitTest = function(str) {
 	if(str.toLowerCase().test(/x...o/ || /o...x/)) {return true;}

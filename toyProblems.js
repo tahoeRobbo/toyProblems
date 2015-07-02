@@ -22,7 +22,7 @@ oddReplacer(nums);
 
 
 //Week 3 Day 2
-
+//Doesn't work
 var simpleSymbols = function(string) {
 	var result = false;
 	if(!string) {
@@ -41,9 +41,10 @@ var simpleSymbols = function(string) {
 	
 };
 
-simpleSymbols("+d+==+d+==+c+")
 
+simpleSymbols("+d+==+d+==+c+");
 
+//doesn't work
 var simpleSymbols2 = function(string) {
 	var result = false;
 	for(var i = 0; i < string.length; i++) {
@@ -56,6 +57,7 @@ var simpleSymbols2 = function(string) {
 	return result;
 };
 
+simpleSymbols2("+d+==+d+==+c+");
 /*var firstNonRepeatedChr = function(string) {
 	for(var i = 0; i< string.length; i++) {
 		if(string[i-1] && string[i] !== string[i-1]) {

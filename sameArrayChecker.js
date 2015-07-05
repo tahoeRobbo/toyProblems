@@ -17,6 +17,6 @@ var results = [];
 results.push(sameArrayChecker([1,2,3], [4,5,6]));//false
 results.push(sameArrayChecker([1,2,3], [1,2,3]));//true
 results.push(sameArrayChecker([1,2,3], [1,2,3,4]));//false
-results.unshift("key** 1-false, 2-true, 3-false");
+results.unshift("**key** 1-false, 2-true, 3-false");
 
-console.log(results, results[0]);
+console.log(results);

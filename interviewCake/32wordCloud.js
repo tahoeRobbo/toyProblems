@@ -34,8 +34,8 @@
 		}
 
 		console.log(wordsToCount, ' wordsToCount');
-		console.log(wordsToCount['tits']);
+		console.log(wordsToCount['dog']);
 		return wordsToCount;
 	}
 
-	wordCloud('tits i love tits Tits tits, and i - love Ass');
+	wordCloud('dog cat Dog rat sleepy dog, night you -  stinky');

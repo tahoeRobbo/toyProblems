@@ -10,7 +10,7 @@ function ArithGeoII(arr) {
 		arithmetic = false;
 	}
 	
-	else if(arr[i] / arr[i - 1] !== arr[1] / arr[0]){
+	if(arr[i] / arr[i - 1] !== arr[1] / arr[0]){
 		geometric = false;
 	}
 	}

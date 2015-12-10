@@ -127,6 +127,15 @@ replace(/\s/g, '')
 
 //need to account for b before a
 
+function ABCheckerReg(string) {
+	if(/a..b/.test(string)){
+		return true;
+	}
+	return false;
+}
+
+	ABCheckerReg('abcb')//true
+
 
 
 var ABChecker = function(string) {

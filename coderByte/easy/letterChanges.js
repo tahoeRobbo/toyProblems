@@ -26,7 +26,7 @@ var letterChanges2 = function(str) {
 letterChanges2('dog');
 
 
-
+//best
 var letterChanges3 = function(str) {
 	var newStr = str.replace(/[a-z]/gi, function(char){
 		char = String.fromCharCode(char.charCodeAt(0) + 1);

@@ -23,3 +23,6 @@ var arraySorter2 = function(arr) {
 function arraySorter3 (arr) {
 	return arr.sort(function(a, b){return a - b;});
 }
+
+var arraySorter4 = (arr) =>
+	arr.sort((a,b) => a-b);

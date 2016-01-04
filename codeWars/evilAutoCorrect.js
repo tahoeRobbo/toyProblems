@@ -21,4 +21,4 @@ function autocorrect (str){
 function autocorrect(str){
 	return str.replace(/\b(u|you+)\b/gi, 'your sister');
 }
-autocorrect("i love youuuu and wanna fuck u since you got a purdy mouth bayou");
+autocorrect("i love youuuu and wanna luv u since you got a nice personality bayou");

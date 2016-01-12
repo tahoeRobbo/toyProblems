@@ -24,3 +24,4 @@ const distancesFromAverage = function(arr){
 };
 
 distancesFromAverage([55, 95, 62,36,48]);
+

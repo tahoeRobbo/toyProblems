@@ -5,7 +5,7 @@
 
 const sumMulti3And5 = () => {
 	'use strict';
-	var nums = [];
+	let nums = [];
 	
 	for(let i = 0; i < 1000; i++){
 		if(i % 3 === 0 || i % 5 === 0){

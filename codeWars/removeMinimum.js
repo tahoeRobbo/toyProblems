@@ -12,7 +12,7 @@
 //
 
 const removeSmallest = (numbers) => {
-	let smallest = numbers.sort((a,b) => a-b).shift();
+	let smallest = numbers.slice().sort((a,b) => a-b).shift();
 	return numbers.splice(numbers.indexOf(smallest), 1);
 };
 

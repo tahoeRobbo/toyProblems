@@ -1,0 +1,1 @@
+p(r)0ject(Eu)l3r files -- names changed for google.  Don't want to violate their wish to not publish solutions but still want to publish solutions.. think this should be a good comprimise.  math puzzles :)

@@ -21,3 +21,17 @@
 //[-1, 2, 3].any(isGreaterThanZero) => true
 //[-1, -2, -3].any(isGreaterThanZero) => false
 //You do not need to worry about the data supplied, it will be an array at all times.
+
+//aww yeah -- only diff btw top solution and mine is trip equals
+Array.prototype.all = function (p) {
+	return (this.filter(p).length === this.length);
+
+};
+
+Array.prototype.none = function (p) {
+	return (this.filter(p).length === 0);
+};
+
+Array.prototype.any = function (p) {
+	return (this.filter(p).length > 0);
+};

@@ -185,3 +185,96 @@ function validBraces(braces){
   }
   return braces.length == 0;
 }
+function Braces(values) {
+    console.log(values.length);
+    var res = [];
+    
+    for(var i = 0, end = values.length - 1; i <= end; i++ ){
+        console.log(values[0])
+        var bracesToTest = values[i];
+        console.log(bracesToTest, 'bracesToTest');
+        var open = [];
+        var unbalanced = false;
+
+
+        for(var j = 0; j < bracesToTest.length; j++){
+            if(/[\(\[\{]/g.test(bracesToTest[j])){
+                open.push(bracesToTest[j]);
+            }
+
+            if(bracesToTest[j] === ')'){
+                (open[open.length - 1] === '(')?
+                    open.pop() : unbalanced = true;
+            }
+
+            if(bracesToTest[j] === '}'){
+                (open[open.length - 1] === '{')?
+                    open.pop() : unbalanced = true;
+            }
+
+            if(bracesToTest[j] === ']'){
+                (open[open.length - 1] === '[')?
+                    open.pop() : unbalanced = true;
+            }
+        }
+
+        
+        console.log(open, 'open')
+       res.push( (open.length === 0 && !unbalanced) ? 'YES' : 'NO' );
+    }
+    
+   return res;
+}
+
+function foo1()
+{
+  return {
+    bar: "hello"
+  };
+}
+
+function foo2()
+{
+  return 
+  {
+    bar : "hello"
+  };
+}
+
+function Braces(values) {
+    var res = [];
+    
+    for(var i = 0, end = values.length - 1; i <= end; i++ ){
+        var bracesToTest = values[i],
+            open = [],
+            unbalanced = false;
+
+
+        for(var j = 0, len = bracesToTest.length; j < len; j++){
+            if(/[\(\[\{]/g.test(bracesToTest[j])){
+                open.push(bracesToTest[j]);
+            }
+
+            if(bracesToTest[j] === ')'){
+                (open[open.length - 1] === '(')?
+                    open.pop() : unbalanced = true;
+            }
+
+            if(bracesToTest[j] === '}'){
+                (open[open.length - 1] === '{')?
+                    open.pop() : unbalanced = true;
+            }
+
+            if(bracesToTest[j] === ']'){
+                (open[open.length - 1] === '[')?
+                    open.pop() : unbalanced = true;
+            }
+        }
+
+       res.push( (open.length === 0 && !unbalanced) ? 'YES' : 'NO' );
+        
+    }
+    
+   return res;
+    
+}
